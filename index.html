@@ -102,9 +102,8 @@
         }
 
         .c2 h1 {
-            font-size: 30px;
+           
             color: white;
-            font-weight: bolder;
             padding: 20px;
             text-transform: uppercase;
         }
@@ -164,6 +163,11 @@
         .cf3 {
             background-color: black;
             padding-top: 30px;
+        }
+        .c3 h1{
+            color:white;
+            text-transform: uppercase;
+            padding:30px;
         }
 
         .portfolio {
@@ -340,7 +344,7 @@
 
         @media(max-width: 992px) {
             nav .navbar-nav {
-                background-color: #ff6d02;
+                /* background-color: #ff6d02; */
             }
 
             .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -477,13 +481,11 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trainings</a>
+                        <a class="nav-link" href="#trainings">Trainings</a>
                     </li>
+                  
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#register">Register</a>
                     </li>
 
                 </ul>
@@ -518,7 +520,7 @@
                     <i class="fas fa-prescription-bottle-alt"></i>
                 </div>
                 <div class="content">
-                    <h4 class="text-center">Hard Work</h4>
+                    <h4 class="text-center">nutritional diet</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus optio iusto?</p>
                 </div>
             </div>
@@ -527,15 +529,16 @@
                     <i class="fas fa-running"></i>
                 </div>
                 <div class="content">
-                    <h4 class="text-center">Hard Work</h4>
+                    <h4 class="text-center">daily exercise</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus optio iusto?</p>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="container-fluid cf3">
+    <div class="container-fluid cf3" id="trainings">
         <div class="container c3">
+            <h1 class="text-center">Our Trainings</h1>
             <div class="portfolio">
                 <div class="img1">
                     <img src="john-arano-h4i9G-de7Po-unsplash.jpg" alt="">
@@ -594,7 +597,7 @@
                         <p class="text-center">unlimited equipmets</p>
                         <p class="text-center">month to mouth</p>
                         <p class="text-center">no personal trainer</p>
-                        <p class="text-center">no nutritional diat</p>
+                        <p class="text-center">no nutritional diet</p>
                     </div>
                     <button class="btn btn-block">Enroll now</button>
                 </div>
@@ -610,7 +613,7 @@
                         <p class="text-center">unlimited equipmets</p>
                         <p class="text-center">month to mouth</p>
                         <p class="text-center"> personal trainer</p>
-                        <p class="text-center"> nutritional diat</p>
+                        <p class="text-center"> nutritional diet</p>
                     </div>
                     <button class="btn btn-block">Enroll now</button>
                 </div>
@@ -625,25 +628,21 @@
                         <p class="text-center">unlimited equipmets</p>
                         <p class="text-center">month to mouth</p>
                         <p class="text-center"> personal trainer</p>
-                        <p class="text-center"> nutritional diat</p>
+                        <p class="text-center"> nutritional diet</p>
                     </div>
                     <button class="btn btn-block">Enroll now</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid cf7">
+    <div class="container-fluid cf7" id="register">
         <h1 class="text-center">Register here</h1>
         <form action="" class="form">
            
             <input type="text" placeholder="Name"><br><br>
             <input type="email" placeholder="Email"><br><br>
             <input type="password" placeholder="Password"><br><br>
-            <select name="Select" id="" placeholder="Select">
-                <option value="">Pune</option>
-                <option value="">Mumbai</option>
-                <option value="">Nashik</option>
-            </select>
+            <input type="text" name="" id="" placeholder="City">
             <br><br>
             <button class="btn btn-block" type="submit">Submit</button>
         </form>
