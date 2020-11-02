@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Gym</title>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/a73d299641.js" crossorigin="anonymous"></script>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: 'Mulish', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .bg-light {
+            background-color: #000000de !important;
+        }
+
+        nav {
+
+            position: sticky;
+        }
+
+        .navbar-nav {
+            padding-left: 70px;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .c1::before {
+            content: "";
+            position: absolute;
+            background: url('h1_hero.png') no-repeat center center/cover;
+            width: 100%;
+            height: 800px;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 0.5rem;
+            padding-left: 2.5rem;
+
+            text-transform: uppercase;
+
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link:hover {
+            color: #ff6d02;
+
+        }
+
+        .navbar-toggler {
+            background-color: white;
+        }
+
+        .r1 {
+            margin-top: 200px;
+        }
+
+        .r1 p {
+            color: white;
+            font-size: 18px;
+
+        }
+
+        .r1 h1 {
+
+            text-transform: uppercase;
+            font-size: 50px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        span {
+            color: #ff6d02;
+        }
+
+        .c2 {
+            background-color: #00000080;
+            box-shadow: #424242 0px 0px 5px;
+            padding-bottom: 30px;
+        }
+
+        .c2 h1 {
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            padding: 20px;
+            text-transform: uppercase;
+        }
+
+        .whychooseus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #101010;
+            display: flex;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-duration: 1s;
+            
+        }
+        .content{
+            margin: 5px;
+        }
+
+        i {
+            color: #ff6d02;
+            font-size: 70px;
+        }
+        .box:hover i{
+            color: white ;
+        }
+        .box:hover{
+            background-color:  #ff6d02;
+        }
+
+        .c2 h4 {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .c2 p {
+            color: white;
+            text-align: center;
+        }
+
+        .cf3 {
+            background-color: black;
+            padding-top: 30px;
+        }
+
+        .portfolio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio img {
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        .cf4 {
+            background-color: black;
+
+        }
+
+        .pricingplan {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        .cf4 h1{
+            color: white;
+            text-transform: uppercase;
+            padding: 30px;
+        }
+
+        .pricing {
+            width: 350px;
+            height: 450px;
+            margin: 5px;
+            border: 1px solid grey;
+            transform: skewY(8deg);
+            padding: 20px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .aboutpricing {
+            transform: skewY(-8deg);
+        }
+
+        .pricing h3 {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .pricing h2 {
+
+            text-transform: uppercase;
+            color: #ff6d02;
+        }
+
+        .pricing p{
+            color: white;
+            text-transform: uppercase;
+        }
+        .pricing:hover{
+            background-color:  white;
+        }
+        .pricing:hover h3{
+            color: black;
+        }
+        .pricing:hover p{
+            color: black;
+        }
+        .pricing:hover .aboutpricing .btn{
+            background-color:  #ff6d02;
+        }
+
+        .features {
+            margin-top: 20px;
+        }
+
+        .pricing .features p {
+            color: grey;
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+
+        .aboutpricing .btn {
+            background-color: #1e1e1ee6;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 0px;
+        }
+        .cf5{
+            background-color: black;
+        }
+        .cf5 h1{
+            color: white;
+            text-transform: uppercase;
+            padding: 30px;
+        }
+        .c5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .c5 .offerings{
+            width:300px;
+            height:300px;
+            margin: 5px;
+            border: 1px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         .cf6{
+             background: url('pexels-leon-martinez-1552252_photoshop.jpg') no-repeat center center/cover;
+             width:100%;
+             height:350px;
+         }
+         .cf6 h1{
+            color: white;
+            text-transform: uppercase;
+            padding: 80px;
+            font-weight: bolder;
+            font-size: 50px;
+
+         }
+         .cf6 .btn{
+             background: #ff6d02;
+             border: 2px solid #ff6d02;
+             text-transform: uppercase;
+             color: white;
+             position: relative;
+             top:-69px;
+             border-radius: 0px;
+         }
+         .cf7{
+             background-color: black;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             flex-direction: column;
+             padding: 30px;
+         }
+         .cf7  h1{
+             color: white;
+             text-transform: uppercase;
+             padding: 30px;
+         }
+         .cf7 .form input,select{
+            background-color: #1e1e1ee6;
+            color: white;
+            width:330px;
+            height:36px;
+            border: none;
+            text-align: center;
+         }
+         .form :placeholder-shown{
+             text-align: center;
+             color: white;
+         }
+         select,option{
+             text-align: center;
+         }
+         
+         .cf7 .form .btn{
+             background-color: #ff6d02;
+             color: white;
+             border-radius: 0px;
+         }
+
+        /* all media queries */
+
+
+
+        @media(max-width: 992px) {
+            nav .navbar-nav {
+                background-color: #ff6d02;
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link:hover {
+                color: white;
+
+            }
+        }
+
+        @media(max-width: 822px) {
+            .whychooseus {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .info {
+                flex-direction: row;
+            }
+
+            .content {
+                width: 300px;
+            }
+
+            .c1::before {
+                content: "";
+                position: absolute;
+                background: url('h1_hero.png') no-repeat center right/cover;
+                background-size: 150% 100%;
+                width: 100%;
+                height: 600px;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            .c2 {
+                background-color: black;
+
+            }
+
+
+        }
+
+        @media(min-width: 822px) {
+            .c1::before {
+                content: "";
+                position: absolute;
+                background: url('h1_hero.png') no-repeat center right/cover;
+                background-size: 127% 100%;
+                width: 100%;
+                height: 926px;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        @media(max-width: 767px) {
+            .c2 {
+                margin-top: 150px;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .whychooseus {
+                flex-direction: column;
+
+            }
+
+            .info {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:948px) {
+            .portfolio img {
+                width: 250px;
+                height: 250px;
+                margin: 5px;
+            }
+        }
+
+        @media(max-width:798px) {
+            .portfolio img {
+                width: 200px;
+                height: 200px;
+                margin: 5px;
+            }
+        }
+
+        @media(max-width:660px) {
+            .portfolio {
+                flex-direction: column;
+            }
+
+            .portfolio img {
+                width: 350px;
+                height: 350px;
+                margin: 5px;
+            }
+        }
+        @media(max-width: 730px){
+            .pricingplan{
+                flex-direction: column;
+            }
+        }
+        @media(max-width:785px){
+            .c5{
+                flex-direction: column;
+            }
+        }
+        @media(max-width: 528px){
+            .cf6 h1{
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="index.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trainings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container c1">
+        <div class="row r1">
+            <div class="  col-md-6 ">
+                <p>S H A P E &nbsp Y O U R &nbsp B O D Y </p>
+                <h1 class="animate__animated animate__fadeInUp">Be <span>Strong</span> <br>Training Hard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="c2">
+        <h1 class="text-center">Why Choose Us</h1>
+        <div class="whychooseus">
+            <div class="info">
+                <div class="box">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="content">
+                    <h4 class="text-center">Hard Work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus optio iusto?</p>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <div class="box">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                </div>
+                <div class="content">
+                    <h4 class="text-center">Hard Work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus optio iusto?</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="box">
+                    <i class="fas fa-running"></i>
+                </div>
+                <div class="content">
+                    <h4 class="text-center">Hard Work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe delectus optio iusto?</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid cf3">
+        <div class="container c3">
+            <div class="portfolio">
+                <div class="img1">
+                    <img src="john-arano-h4i9G-de7Po-unsplash.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="john-fornander-lgIe-hgASXE-unsplash.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="scott-webb-5IsdIqwwNP4-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="img1">
+                    <img src="victor-freitas-fZsfqu2a-Mk-unsplash.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="victor-freitas-KkYWWpurqbE-unsplash.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="alexander-redl-d3bYmnZ0ank-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid cf5" id="services">
+        <h1 class="text-center">What we offer</h1>
+        <div class=" c5">
+            <div class="offerings">
+                <img src="feature1.png" alt="">
+            </div>
+            <div class="offerings">
+                 <img src="feature2.png" alt="">
+            </div>
+            <div class="offerings">
+                <img src="feature3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cf6">
+          <h1 class="text-center">enroll now to get more deals</h1>
+          <center>   <button class="btn">Enroll Now</button></center>
+       
+    </div>
+    <div class="container-fluid cf4">
+        <h1 class="text-center">Pricing plans</h1>
+        <div class="pricingplan">
+           
+            <div class="pricing">
+                <div class="aboutpricing">
+                    <h3 class="text-center">Basic</h3>
+                    <h2 class="text-center">$20/month</h2>
+                    <p class="text-center">Single Class</p>
+                    <div class="features">
+                        <p class="text-center">free riding</p>
+                        <p class="text-center">unlimited equipmets</p>
+                        <p class="text-center">month to mouth</p>
+                        <p class="text-center">no personal trainer</p>
+                        <p class="text-center">no nutritional diat</p>
+                    </div>
+                    <button class="btn btn-block">Enroll now</button>
+                </div>
+
+            </div>
+            <div class="pricing">
+                <div class="aboutpricing">
+                    <h3 class="text-center">One Year</h3>
+                    <h2 class="text-center">$50/year</h2>
+                    <p class="text-center">Single Class</p>
+                    <div class="features">
+                        <p class="text-center">free riding</p>
+                        <p class="text-center">unlimited equipmets</p>
+                        <p class="text-center">month to mouth</p>
+                        <p class="text-center"> personal trainer</p>
+                        <p class="text-center"> nutritional diat</p>
+                    </div>
+                    <button class="btn btn-block">Enroll now</button>
+                </div>
+            </div>
+            <div class="pricing">
+                <div class="aboutpricing">
+                    <h3 class="text-center">unlimited</h3>
+                    <h2 class="text-center">$199</h2>
+                    <p class="text-center">Single Class</p>
+                    <div class="features">
+                        <p class="text-center">free riding</p>
+                        <p class="text-center">unlimited equipmets</p>
+                        <p class="text-center">month to mouth</p>
+                        <p class="text-center"> personal trainer</p>
+                        <p class="text-center"> nutritional diat</p>
+                    </div>
+                    <button class="btn btn-block">Enroll now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cf7">
+        <h1 class="text-center">Register here</h1>
+        <form action="" class="form">
+           
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <select name="Select" id="" placeholder="Select">
+                <option value="">Pune</option>
+                <option value="">Mumbai</option>
+                <option value="">Nashik</option>
+            </select>
+            <br><br>
+            <button class="btn btn-block" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
